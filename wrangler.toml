@@ -5,6 +5,12 @@ compatibility_date = "2024-10-22"
 compatibility_flags = ["nodejs_compat"]
 workers_dev = false
 
+# 自定义域名配置
+routes = [
+  { pattern = "momotou.live", custom_domain = true },  # 绑定主域名
+  { pattern = "xget.momotou.live", custom_domain = true }  # 绑定子域名（可选）
+]
+
 [placement]
 mode = "smart"
 
